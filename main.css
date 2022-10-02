@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "bruh";
+  src: url("./testing\ full\ ascii.ttf");
+}
+
+html, body{
+  background-color: #4e6264;
+  font-family: "bruh";
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5cm;
+  height: 100%;
+  width: 100%;
+}
+
+.container{
+  width: 80%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes textarea-out-focus{
+  from {background-color: #3c4a48;}
+  to {background-color: #001708;}
+}
+
+@keyframes textarea-in-focus{
+  from {background-color: #001708;}
+  to {background-color: #3c4a48;}
+}
+
+textarea{
+  background-color: #3c4a48;
+  animation-name: textarea-in-focus;
+  animation-duration: 70ms;
+  resize: none;
+  font-family: "bruh";
+  width: 100%; height: 100%;
+  outline: none;
+  border: none;
+  color: #f666c9;
+}
+
+textarea:focus-visible{
+  background-color: #001708;
+  animation-name: textarea-out-focus;
+  animation-duration: 70ms;
+}
+
+input::placeholder {
+  color: #4d9c7c;
+}
